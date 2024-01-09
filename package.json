@@ -6,9 +6,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.16",
     "next": "latest",
+    "postcss": "^8.4.33",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.4.1"
   },
   "engines": {
     "node": ">=18"
