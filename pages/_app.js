@@ -1,4 +1,4 @@
-import Button from '../components/Button/Button';
+import TailwindButton from '../components/TailwindButton/TailwindButton';
 import '../styles/global.css'
 
 const App = () => {
@@ -6,7 +6,7 @@ const App = () => {
         <div>
             <div className="p-4 bg-blue-500 text-white">Hello, Tailwind!</div>
             <br></br>
-            <Button>Login</Button>
+            <TailwindButton>Login</TailwindButton>
         </div>
     )
 }
