@@ -1,6 +1,6 @@
 # Project Dependencies
 
-This project uses a number of open source libraries and dependencies. Below is a list of these libraries and a brief description of their use in the project.
+This NextJS project uses a number of open source libraries and dependencies. Below is a list of these libraries and a brief description of their use in the project.
 
 ## Dependencies
 
