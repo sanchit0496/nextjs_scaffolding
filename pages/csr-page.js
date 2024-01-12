@@ -1,3 +1,5 @@
+import CsrComponent from "../components/CsrComponent/CsrComponent"
+
 const CsrPage = () => {
   return (
     <div>

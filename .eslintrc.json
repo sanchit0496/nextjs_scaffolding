@@ -1,12 +1,26 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": "standard",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "rules": {}
-}
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "standard",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off" // For Next.js since React import is not needed in files with JSX
+    },
+    "settings": {
+      "react": {
+        "version": "detect" // Automatically detect the React version
+      }
+    }
+  }
+  
