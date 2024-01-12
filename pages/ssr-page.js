@@ -1,4 +1,5 @@
 import React from 'react';
+import axiosInstance from "../utils/axiosInstance"
 
 const SsrComponent = ({ data }) => {
     return (
@@ -10,13 +11,21 @@ const SsrComponent = ({ data }) => {
 };
 
 export async function getServerSideProps() {
-    // Replace with your API endpoint
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos/5');
-    const data = await res.json();
+    try {
+        // Replace with your API endpoint
+        const res = await axiosInstance.get('/todos/5');
+        const data = res.data; // Using .data to get the actual data from axios response
 
-    return {
-        props: { data }, // will be passed to the page component as props
-    };
+        return {
+            props: { data }, // will be passed to the page component as props
+        };
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return {
+            props: { data: null }, // Return null data on error
+        };
+    }
 }
+
 
 export default SsrComponent;
