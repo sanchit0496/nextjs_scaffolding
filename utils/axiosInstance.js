@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com',
+  baseURL: 'https://jsonplaceholder.typicode.com'
   // other configurations
 })
 
@@ -13,7 +13,7 @@ axiosInstance.interceptors.response.use(
       // Handle 401 error, e.g., redirect to login or refresh token
     }
     return Promise.reject(error)
-  },
+  }
 )
 
 export default axiosInstance
