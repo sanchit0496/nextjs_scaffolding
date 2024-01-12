@@ -24,6 +24,16 @@ const NavBar = () => {
             <span className="hover:bg-blue-700 p-2 rounded">Gallery</span>
           </Link>
         </li>
+        <li>
+          <Link href="/first-post">
+            <span className="hover:bg-blue-700 p-2 rounded">First Post</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/second-post">
+            <span className="hover:bg-blue-700 p-2 rounded">Second Post</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   )
