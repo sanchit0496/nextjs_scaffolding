@@ -1,10 +1,12 @@
 import TailwindButton from '../components/TailwindButton/TailwindButton';
 import '../styles/global.css'
+import NavBar from '../components/Navbar/Navbar';
 
-const App = () => {
+const App = ({Component, pageProps}) => {
     return(
         <div>
-            <div className="p-4 bg-blue-500 text-white">Hello, Tailwind!</div>
+            <NavBar />
+            <Component {...pageProps} />
             <br></br>
             <TailwindButton>Login</TailwindButton>
         </div>
