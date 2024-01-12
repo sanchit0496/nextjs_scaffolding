@@ -1,4 +1,4 @@
-const Button = ({ children, onClick }) => {
+const TailwindButton = ({ children, onClick }) => {
     return (
         <button 
             onClick={onClick} 
@@ -9,4 +9,4 @@ const Button = ({ children, onClick }) => {
     );
 };
 
-export default Button;
+export default TailwindButton;
