@@ -19,6 +19,11 @@ const NavBar = () => {
             <span className="hover:bg-blue-700 p-2 rounded">CSR Page</span>
           </Link>
         </li>
+        <li>
+          <Link href="/gallery">
+            <span className="hover:bg-blue-700 p-2 rounded">Gallery</span>
+          </Link>
+        </li>
       </ul>
     </nav>
   )
