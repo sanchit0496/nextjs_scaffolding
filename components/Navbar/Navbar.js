@@ -26,12 +26,22 @@ const NavBar = () => {
         </li>
         <li>
           <Link href="/first-post">
-            <span className="hover:bg-blue-700 p-2 rounded">First Post</span>
+            <span className="hover:bg-blue-700 p-2 rounded">Slug Page 01</span>
           </Link>
         </li>
         <li>
           <Link href="/second-post">
-            <span className="hover:bg-blue-700 p-2 rounded">Second Post</span>
+            <span className="hover:bg-blue-700 p-2 rounded">Slug Page 02</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/posts/technology/2">
+            <span className="hover:bg-blue-700 p-2 rounded">Dynamic Routing 01</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/posts/science/4">
+            <span className="hover:bg-blue-700 p-2 rounded">Dynamic Routing 02</span>
           </Link>
         </li>
       </ul>
