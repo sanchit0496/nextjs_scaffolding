@@ -1,5 +1,6 @@
 // pages/_error.js
 import Link from 'next/link';
+import React from 'react';
 
 function Error({ statusCode }) {
     return (

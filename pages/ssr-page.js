@@ -1,4 +1,5 @@
 import axiosInstance from '../utils/axiosInstance'
+import React from 'react';
 
 const SsrComponent = ({ data }) => {
   return (

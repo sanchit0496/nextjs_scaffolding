@@ -1,4 +1,5 @@
 import CsrComponent from "../components/CsrComponent/CsrComponent"
+import React from 'react';
 
 const CsrPage = () => {
   return (
