@@ -5,6 +5,7 @@ import RegistrationForm from '../components/RegistrationForm/RegistrationForm'
 import DateComponent from '../components/DateComponent/DateComponent'
 import { useState } from 'react'
 import TailwindButton from '../components/TailwindButton/TailwindButton'
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -18,6 +19,17 @@ export default function Home() {
     setIsFormOpen(false)
   }
   return (
+    <>
+    <NextSeo
+    title="Specific Title for This Page"
+    description="Specific description for this page"
+    openGraph={{
+      title: 'Open Graph Title for This Page',
+      description: 'Open Graph Description for This Page',
+      // Additional Open Graph or other SEO properties
+    }}
+    // You can also override other global settings from SEOConfig here
+  />
     <div className={styles.container}>
       Hello
       <Modal isOpen={isFormOpen} onClose={handleCloseForm}>
@@ -28,5 +40,6 @@ export default function Home() {
       </TailwindButton>
       <DateComponent />
     </div>
+    </>
   )
 }
